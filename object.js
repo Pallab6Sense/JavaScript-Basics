@@ -13,6 +13,14 @@ const person = {
   },
 };
 
+const {
+  firstName,
+  lastName,
+  address: { city },
+} = person; //Destructuring the person object
+
+console.log(firstName, lastName, city);
+
 console.log(person.firstName);
 console.log(person.hobbies[2]);
 console.log(person.address.city);
